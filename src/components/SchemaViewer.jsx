@@ -1,3 +1,4 @@
+import { useState } from "react";
 export default function SchemaViewer({ schema }) {
   const [open, setOpen] = useState(false);
 
