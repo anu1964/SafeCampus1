@@ -1,7 +1,8 @@
+import { useState } from "react";
+
 export default function SchemaViewer({ schema }) {
   const [open, setOpen] = useState(false);
 
-  // Fallback demo schema if used standalone
   const displaySchema = schema ?? {
     disaster_type: "EARTHQUAKE",
     preparedness_score: 0,
@@ -16,7 +17,6 @@ export default function SchemaViewer({ schema }) {
         <span>{"{ }"} JSON Schema Output</span>
         <span>{open ? "▲ Hide" : "▼ Show"}</span>
       </button>
-
       {open && (
         <pre className="schema-block">
           {JSON.stringify(displaySchema, null, 2)}

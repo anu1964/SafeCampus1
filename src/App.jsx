@@ -37,10 +37,12 @@ export default function App() {
         </div>
         <span className="navbar-tagline">Emergency Preparedness System</span>
       </header>
+
       <div className="hero">
         <h1>Know What To Do <span className="hero-accent">When It Matters Most</span></h1>
         <p>Interactive disaster response guidance for students and campus staff</p>
       </div>
+
       <main className="container">
         <DisasterPanel selected={selectedDisaster} onSelect={setSelectedDisaster} />
         <div className="two-col">
@@ -49,6 +51,7 @@ export default function App() {
         </div>
         <SchemaViewer schema={schema} />
       </main>
+
       <footer className="footer">
         <p>SafeCampus © 2026 — Built for HACKARENA</p>
       </footer>

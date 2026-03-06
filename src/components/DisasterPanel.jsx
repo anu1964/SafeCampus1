@@ -2,22 +2,24 @@ import { disasters } from "../data/disasters";
 
 export default function DisasterPanel({ selected, onSelect }) {
   const disaster = disasters[selected];
+
   return (
     <section className="disaster-panel">
       <h2 className="section-title">Select Disaster Type</h2>
-      <div className="disaster-tabs">
-        {Object.keys(disasters).map((key) => (
-          <button
-            key={key}
-            className={`disaster-tab ${selected === key ? "active" : ""}`}
-            style={selected === key ? { borderColor: disasters[key].color, color: disasters[key].color } : {}}
-            onClick={() => onSelect(key)}
-          >
-            <span className="tab-icon">{disasters[key].icon}</span>
-            <span className="tab-label">{key}</span>
-          </button>
-        ))}
-      </div>
+
+      {/* ✅ DROPDOWN — required by problem statement */}
+      <select
+        className="disaster-dropdown"
+        value={selected}
+        onChange={(e) => onSelect(e.target.value)}
+      >
+        <option value="EARTHQUAKE">🏚️ EARTHQUAKE</option>
+        <option value="FIRE">🔥 FIRE</option>
+        <option value="FLOOD">🌊 FLOOD</option>
+        <option value="CYCLONE">🌀 CYCLONE</option>
+      </select>
+
+      {/* ✅ Response steps shown immediately on selection */}
       <div className="response-card" style={{ borderTopColor: disaster.color }}>
         <div className="response-header" style={{ background: disaster.color }}>
           <span className="response-icon">{disaster.icon}</span>

@@ -21,7 +21,7 @@ body {
   min-height: 100vh;
 }
 
-/* NAVBAR */
+
 .navbar {
   display: flex;
   align-items: center;
@@ -55,7 +55,6 @@ body {
   border: 1px solid var(--border);
 }
 
-/* HERO */
 .hero {
   text-align: center;
   padding: 3rem 2rem 2rem;
@@ -77,7 +76,6 @@ body {
   font-size: 1rem;
 }
 
-/* CONTAINER */
 .container {
   max-width: 1000px;
   margin: 0 auto;
@@ -87,7 +85,6 @@ body {
   gap: 2rem;
 }
 
-/* SECTION TITLE */
 .section-title {
   font-family: 'Syne', sans-serif;
   font-size: 1.1rem;
@@ -98,7 +95,6 @@ body {
   margin-bottom: 1rem;
 }
 
-/* DISASTER TABS */
 .disaster-tabs {
   display: flex;
   gap: 0.6rem;
@@ -127,7 +123,6 @@ body {
 .disaster-tab.active { background: var(--surface2); font-weight: 700; }
 .tab-icon { font-size: 1.1rem; }
 
-/* RESPONSE CARD */
 .response-card {
   border: 1.5px solid var(--border);
   border-radius: 12px;
@@ -208,7 +203,6 @@ body {
   line-height: 1.5;
 }
 
-/* TWO COL */
 .two-col {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -219,7 +213,7 @@ body {
   .two-col { grid-template-columns: 1fr; }
 }
 
-/* CHECKLIST */
+
 .checklist-panel, .contacts-panel, .disaster-panel, .schema-panel {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -314,7 +308,6 @@ body {
 
 .reset-btn:hover { border-color: var(--danger); color: var(--danger); }
 
-/* CONTACTS */
 .contacts-grid {
   display: flex;
   flex-direction: column;
@@ -349,7 +342,6 @@ body {
   font-size: 0.95rem;
 }
 
-/* SCHEMA */
 .schema-toggle {
   width: 100%;
   display: flex;
@@ -379,7 +371,6 @@ body {
   line-height: 1.6;
 }
 
-/* FOOTER */
 .footer {
   text-align: center;
   padding: 1.5rem;
