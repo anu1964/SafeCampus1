@@ -1,6 +1,7 @@
 export const disasters = {
   EARTHQUAKE: {
     icon: "🏚️", color: "#e67e22",
+    contacts: ["Ambulance", "Police", "Disaster Helpline"],
     safety_actions: [
       "DROP to your hands and knees immediately",
       "Take COVER under a sturdy desk or table",
@@ -14,6 +15,7 @@ export const disasters = {
   },
   FIRE: {
     icon: "🔥", color: "#e74c3c",
+    contacts: ["Fire Department", "Ambulance", "Campus Security"],
     safety_actions: [
       "Activate the nearest fire alarm immediately",
       "Call emergency services (101) right away",
@@ -27,6 +29,7 @@ export const disasters = {
   },
   FLOOD: {
     icon: "🌊", color: "#2980b9",
+    contacts: ["Disaster Helpline", "Police", "Campus Security"],
     safety_actions: [
       "Move immediately to higher floors or elevated ground",
       "Do not attempt to walk through moving water",
@@ -40,6 +43,7 @@ export const disasters = {
   },
   CYCLONE: {
     icon: "🌀", color: "#8e44ad",
+    contacts: ["Disaster Helpline", "Police", "Ambulance"],
     safety_actions: [
       "Move to a designated cyclone shelter immediately",
       "Stay away from windows, doors and exterior walls",

@@ -25,6 +25,7 @@ export default function App() {
     emergency_contacts: emergencyContacts.map((c) => c.name),
     status: checked.length >= 6 ? "Prepared" : "Needs Improvement",
   };
+  <EmergencyContacts selected={selectedDisaster} />
 
   console.log("SafeCampus Schema:", schema);
 

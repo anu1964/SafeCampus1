@@ -387,3 +387,23 @@ body {
   font-size: 0.8rem;
   border-top: 1px solid var(--border);
 }
+.contacts-hint {
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
+}
+
+.contact-card.relevant {
+  border-color: var(--accent);
+  background: #1a2540;
+}
+
+.contact-badge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  background: var(--accent);
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 20px;
+  letter-spacing: 0.05em;
+}
